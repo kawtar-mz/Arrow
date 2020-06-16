@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
         final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this);
         progressDialog.setCancelable(false);
         progressDialog.setIndeterminate(false);
-        progressDialog.setTitle("Verrify your account");
+        progressDialog.setTitle("Verrify your arrow account");
         progressDialog.show();
         String uRl = "http://10.10.1.2/loginregister/login.php";
         StringRequest request = new StringRequest(Request.Method.POST, uRl, new Response.Listener<String>() {
