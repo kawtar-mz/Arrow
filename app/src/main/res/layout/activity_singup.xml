@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Singup"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please complete the form below to create your Arrow account"
+        android:textColor="#6E6E6E"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="13dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:met_floatingLabel="normal"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/username"
+            android:padding="5dp"
+            android:textColor="#6E6E6E"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            app:met_floatingLabel="normal"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/email"
+            android:padding="5dp"
+            android:textColor="#6E6E6E"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:met_floatingLabel="normal"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/password"
+            android:padding="5dp"
+            android:textColor="#6E6E6E"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile"
+            app:met_floatingLabel="normal"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/mobile"
+            android:padding="5dp"
+            android:textColor="#6E6E6E"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/radiogp"
+            android:orientation="horizontal">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender : "
+            android:textSize="20sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/male"
+                android:textColor="#6E6E6E"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/female"
+                android:textColor="#6E6E6E"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"/>
+        </RadioGroup>
+
+
+    <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="Create"
+            android:textColor="#6E6E6E"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boutton"
+        android:id="@+id/create"/>
+
+
+</LinearLayout>
+</RelativeLayout>
